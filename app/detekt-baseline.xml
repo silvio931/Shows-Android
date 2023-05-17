@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MagicNumber:FileUtil.kt$FileUtil$180</ID>
+    <ID>MagicNumber:FileUtil.kt$FileUtil$270</ID>
+    <ID>MagicNumber:FileUtil.kt$FileUtil$90</ID>
+    <ID>MagicNumber:GetFileUtil.kt$GetFileUtil$1024</ID>
+    <ID>MagicNumber:GetFileUtil.kt$GetFileUtil$4</ID>
+    <ID>SwallowedException:NetworkChecker.kt$NetworkChecker$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:NetworkChecker.kt$NetworkChecker$e: Exception</ID>
+  </CurrentIssues>
+</SmellBaseline>

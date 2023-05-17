@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.shows.ShowsFragment">
+
+        <TextView
+            android:id="@+id/noInternetMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/error"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="24dp"
+            android:text="@string/no_internet_message"
+            android:visibility="invisible"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileButtonCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="24dp">
+
+                <ImageView
+                    android:id="@+id/profileButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_profile_placeholder" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/showName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@android:color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="56dp"
+                android:text="@string/activity_shows_title"
+                android:textColor="@android:color/black"
+                android:textSize="32sp"
+                android:textFontWeight="700" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/topRatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:chipStartPadding="8dp"
+                app:chipEndPadding="8dp"
+                app:chipBackgroundColor="@color/selector_top_rated_button"
+                app:chipStrokeColor="@color/top_rated_button_text_color"
+                app:chipStrokeWidth="1dp"
+                app:chipIcon="@drawable/ic_favorite"
+                app:chipIconTint="@color/top_rated_button_text_color"
+                app:checkedIcon="@drawable/ic_favorite"
+                app:cornerRadius="24dp"
+                android:text="@string/button_top_rated_text"
+                android:textColor="@color/top_rated_button_text_color"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileButtonCardView"
+                android:checkable="true"
+                android:textAllCaps="false" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/showsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            tools:listitem="@layout/view_show_item"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emptyState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/showsEmptyStateIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="128dp"
+                android:src="@drawable/ic_shows_empty_state" />
+
+            <TextView
+                android:id="@+id/showsEmptyStateMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/shoes_empty_state"
+                android:textColor="@color/welcome_screen_text_color"
+                android:textSize="16sp"
+                android:textFontWeight="700"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/showsEmptyStateIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/login_button_enabled_text_color"
+        app:borderWidth="0dp"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_grid"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

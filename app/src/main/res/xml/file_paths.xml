@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="avatar_capture"
+        path="Android/data/com.silvio_mihalic.shows/files/Pictures"/>
+</paths>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Shows-Silvio_Mihalic</string>
+    <string name="login_button">Login</string>
+    <string name="password_input">Password</string>
+    <string name="email_input">Email</string>
+    <string name="login_screen_message">In order to continue please log in.</string>
+    <string name="login_title">Login</string>
+    <string name="login_app_title">Shows</string>
+    <string name="login_email_error">Email format is not correct!</string>
+    <string name="login_password_error">Password must contain at least 6 characters!</string>
+    <string name="activity_shows_title">Shows</string>
+    <string name="shoes_empty_state">Your shows are not showing. Get it?</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_reviews_message">No reviews yet.</string>
+    <string name="write_a_review_button">Write a review</string>
+    <string name="bottom_sheet_review_title">Write a review</string>
+    <string name="bottom_sheet_review_button">Submit</string>
+    <string name="bottom_sheet_edit_text_hint">Comment</string>
+    <string name="review_score">%1$s REVIEWS, %2$s AVERAGE</string>
+    <string name="rating_bar_error">Please give a rating to leave a review!</string>
+    <string name="login_remember_me">Remember me</string>
+    <string name="logout_button">Logout</string>
+    <string name="change_profile_photo_button">Change profile photo</string>
+    <string name="logout_alert_dialog_title">Logout</string>
+    <string name="logout_alert_dialog_message">Are you sure you want to log out?</string>
+    <string name="logout_alert_dialog_decline">Cancel</string>
+    <string name="logout_alert_dialog_accept">Yes</string>
+    <string name='no_permission' formatted='false'>Please check your permissions in Settings.</string>
+    <string name='settings' formatted='false'>Settings</string>
+    <string name="dialog_change_profile_picture_options">Choose</string>
+    <string name="dialog_profile_picture_new_photo">Take a new photo</string>
+    <string name="dialog_profile_picture_gallery_photo">Choose a photo from gallery</string>
+    <string name="registration_button">Register</string>
+    <string name="register_title">Register</string>
+    <string name="repeat_password_input">Repeat password</string>
+    <string name="registration_repeated_password_error">Password do not match!</string>
+    <string name="registration_successful_title">Registration successful!</string>
+    <string name="registration_not_successful">Registration not successful</string>
+    <string name="login_not_successful">Login not successful</string>
+    <string name="review_create_not_successful">Review not created successfully!</string>
+    <string name="profile_image_upload_error">Image not uploaded successfully!</string>
+    <string name="offline_reviews_not_uploaded">Reviews added in offline mode not successfully uploaded</string>
+    <string name="create_review_offline_message">Your review will be shown when you get online!</string>
+    <string name="button_top_rated_text">Top rated</string>
+    <string name="login_error_message">Incorrect password. \nPlease try again.</string>
+    <string name="registration_error_message">Registration not successful.</string>
+    <string name="no_internet_message">No internet</string>
+</resources>

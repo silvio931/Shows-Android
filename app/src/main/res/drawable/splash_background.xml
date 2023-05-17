@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/login_background" />
+
+    <item
+        android:drawable="@drawable/ic_top_left_login" android:top="43dp"
+        android:gravity="top|left" />
+
+    <item
+        android:drawable="@drawable/ic_top_right_login" android:top="43dp"
+        android:gravity="top|right" />
+
+    <item
+        android:drawable="@drawable/ic_bottom_left_splash"
+        android:gravity="bottom|left" />
+
+    <item
+        android:drawable="@drawable/ic_bottom_right_splash"
+        android:gravity="bottom|right" />
+
+</layer-list>
